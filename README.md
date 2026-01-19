@@ -1,39 +1,27 @@
 # CheckNumber AI API Python Client
 
-A simple, ready-to-use Python wrapper for the [checknumber.ai](https://platform.checknumber.ai/login?code=JP1101) API, designed to make number validation quick and painless.
+A Python tool to validate phone numbers using the [checknumber.ai](https://platform.checknumber.ai/login?code=JP1101) API, with a ready-to-use WhatsApp validation script.
 
-## ✨ Features
-- 🚀 Out-of-the-box integration with minimal setup
-- 🛡️ Built-in error handling for common API issues
-- 📊 Clear result parsing for easy integration into your projects
-- 📝 Well-commented code for better understanding
+## ✨ What's Included
+- `whatsapp_check.py` - The core Python script that calls the checknumber.ai API
+- `numbers.txt` - A sample list of phone numbers to validate
+- `run_check.bat` - A Windows batch file to run the script with one click
+- `readme.txt` - Additional notes for local use
 
 ## 🚀 Getting Started
 ### Prerequisites
 1. Sign up at [checknumber.ai](https://platform.checknumber.ai/login?code=JP1101) to get your API key.
-2. Install Python 3.8+
-
-### Installation
-```bash
-git clone https://github.com/JipingC34-RGB/checknumber-ai-python-client.git
-cd checknumber-ai-python-client
-pip install -r requirements.txt
-Usage
-from checknumber_client import CheckNumberClient
-
-# Initialize the client with your API key
-client = CheckNumberClient(api_key="YOUR_API_KEY")
-
-# Validate a number
-result = client.validate_number(phone_number="+1234567890")
-print(result)
-📚 Example
-<img width="1113" height="626" alt="image" src="https://github.com/user-attachments/assets/c0b0ba0e-dcde-4591-abba-b04ea420f8d7" />
-<img width="1113" height="626" alt="image" src="https://github.com/user-attachments/assets/f0518a04-e05c-4c07-a99a-2cd66f7eebfd" />
-
-See example.py for a complete working example.
-📫 Connect with Me
-📞 WhatsApp: +44 7895 062256
-📱 Telegram: @CHECKNUMBERAI_LUNA1
-📄 License
-This project is open source and available under the MIT License.
+2. Install Python 3.8+ and the required packages:
+   ```bash
+   pip install requests
+##How to Use
+#Open whatsapp_check.py and replace YOUR_API_KEY with your actual API key from checknumber.ai.
+#Add the phone numbers you want to check into numbers.txt, one per line.
+#Run the script:
+python whatsapp_check.py
+#Or double-click run_check.bat (Windows only).
+#📫 Connect with Me
+#📞 WhatsApp: +44 7895 062256
+#📱 Telegram: @CHECKNUMBERAI_LUNA1
+#📄 License
+#This project is open source and available under the MIT License.
